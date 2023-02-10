@@ -1,0 +1,370 @@
+.test {
+    &__content {
+        max-width: 1390px;
+        margin: 0 auto 100px;
+        width: 95%;
+    }
+
+    &__tabs {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin: 80px 0 40px;
+    }
+
+    &__linkone {
+        font-family: 'Rubik';
+        font-weight: 700;
+        font-size: px-to-em(34);
+        line-height: 117%;
+        text-transform: uppercase;
+        color: #000000;
+        text-decoration: none;
+        margin-right: 25px;
+    }
+
+    
+    &__link {
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: px-to-em(24);
+        line-height: 141%;
+        color: #535658;
+        text-decoration: none;
+        border-bottom: 1px dashed #535658;
+        margin-right: 25px;
+    }
+
+    &__link:nth-child(3) {
+        margin-right: 0;
+    }
+
+    del {
+        font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #8D9295;
+        margin-left: 10px;
+    }
+
+   
+    &__up,
+    &__down {
+        position: absolute;
+        top: 29px;
+        left: 80%;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+        width: 34px;
+        height: 34px;
+    }
+
+    &__down {
+        top: 74px
+    }
+
+    &__swiper-slide {
+        position: relative;
+        text-align: center;
+        border: 1px solid #ECF0F4;
+        border-radius: 5px;
+        margin-right: 15px;
+        padding-bottom: 25px;
+        width: 335px;
+        max-width: 100%;
+    }
+
+    
+
+    &__swiper-wrapper {
+        width: 100%;
+        max-width: 1390px;
+    }
+
+    
+    &__title {
+        font-family: 'Rubik';
+        font-size: px-to-em(14);
+        line-height: 142%;
+        color: #000000;
+        margin: 10px auto 5px;
+        width: 250px;
+        
+    }
+
+    &__price {
+        display: block;
+        font-family: 'Rubik';
+        font-weight: 700;
+        font-size: px-to-em(20);
+        line-height: 110%;
+        text-transform: uppercase;
+    }
+
+
+    &__select {
+        display: flex;
+        justify-content: center;
+        gap: 0 10px;
+        margin-top: 10px;
+    }
+
+    &__quantity {
+        display: flex;
+        width: 100px;
+        border: 1px solid #ECF0F4;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        gap: 0 20px;
+        margin-left: 25px;
+    }
+
+    &__button,
+    &__btn {
+        border: none;
+        background: none;
+        font-size: 30px;
+        color: #8D9295;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    &__img {
+        max-width: 100%;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    
+
+    &__num {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #4C4E50;
+    }
+
+    &__textone {
+        font-family: 'Rubik';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 120%;
+        color: #000000;
+        order: 1;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: 0 13px;
+        background: #F1D264;
+        border-radius: 5px;
+        padding: 16px 35px;
+        margin-right: 25px;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+
+    &__swiper {
+        display: flex;
+        align-items: center;
+        gap: 0 30px;
+        justify-content: center;
+    }
+
+
+    .slick-arrow.slick-hidden,
+    &__swiper-button-prev,
+    &__swiper-button-next {
+        cursor: pointer;
+    }
+
+    &__swiper-button-prev:hover,
+    &__swiper-button-next:hover {
+        svg {
+            path {
+                stroke: #F1D264;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1531px) {
+        &__swiper-wrapper {
+           
+            max-width: 1300px;
+        }
+
+        &__swiper-slide {
+            width: 300px;
+        }
+
+        
+
+    }
+
+    @media screen and (max-width: 1440px) {
+        &__swiper-button-prev,
+        &__swiper-button-next {
+            align-self: start;
+            svg {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        &__swiper-button-prev {
+            transform: translate(90px, -70px);
+        }
+
+        &__swiper-button-next {
+            transform: translate(-103px, -70px);
+        }
+
+        &__tabs {
+            margin-bottom: 150px;
+            justify-content: space-between;
+        }
+
+        &__quantity {
+            margin-left: 10px;
+        }
+
+        &__btn {
+            margin-right: 10px;
+        }
+
+    }
+
+    @media screen and (max-width: 1024px) {
+        &__linkone {
+            font-size: px-to-em(28);
+        }
+
+        &__link {
+            font-size: px-to-em(18);
+        }
+
+        &__quantity {
+            display: none;
+        }
+
+        &__btn {
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and (max-width: 806px) {
+        &__tabs {
+            @include flex-dir;
+            gap: 10px 0;
+            margin-bottom: 25px;
+        }
+
+        &__linkone {
+            margin-right: 0;
+        }
+
+        &__link {
+            margin-right: 0;
+        }
+
+        .slick-dots  {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 0 10px;
+            margin-top: 20px;
+        }
+
+        .slick-active {
+            button {
+                background-color: #F1D264;
+            }
+        }
+
+        li {
+            button {
+                border-radius: 50px;
+                width: 15px;
+                height: 15px;
+                font-size: 0;
+                background-color: #4C4E50;
+            }
+        }
+
+        /*li {
+            button:active {
+                background-color: #F1D264;
+            }
+        }*/
+
+    
+        &__swiper-button-prev,
+        &__swiper-button-next {
+            display: none;
+        }
+    }
+
+
+    @media screen and (max-width: 570px) {
+        &__icon {
+            svg {
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        &__title {
+            width: 200px;
+            font-size: px-to-em(11);
+        }
+
+        
+        &__swiper-button-prev,
+        &__swiper-button-next {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+        
+        &__icon {
+            svg {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        &__title {
+            font-size: px-to-em(16);
+        }
+
+        &__tabs {
+           align-items: start;
+        }
+
+        &__linkone {
+            font-size: px-to-em(18);
+            
+        }
+
+        &__link {
+            font-size: px-to-em(14);
+        }
+
+    }
+
+    
+   
+  
+}
