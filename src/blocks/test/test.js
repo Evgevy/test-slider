@@ -39,9 +39,9 @@ $(document).ready(function(){
           }
         },
         {
-          breakpoint: 360,
+          breakpoint: 361,
           settings: {
-            dots: true,
+            dots: false,
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
@@ -53,3 +53,8 @@ $(document).ready(function(){
     })
   
   })
+
+  /*document.querySelector('.test__rating').onclick = function() {
+    document.querySelector(".test__rating").style.backgroundColor = "#F1D264";
+  };*/
+  

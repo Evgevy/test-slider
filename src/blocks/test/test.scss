@@ -57,13 +57,38 @@
         left: 80%;
         right: 0;
         bottom: 0;
-        cursor: pointer;
         width: 34px;
         height: 34px;
+       
     }
 
     &__down {
         top: 74px
+    }
+
+    &__up:hover {
+        svg {
+            rect {
+                fill: #DB3737;
+            }
+            path {
+                stroke: #ECF0F4;
+            }
+        }
+    }
+
+    &__down:hover {
+        svg {
+            rect {
+                fill: #5697D3;
+            }
+            path {
+                stroke: #ECF0F4;
+            }
+            circle {
+                stroke: #ECF0F4;
+            }
+        }
     }
 
     &__swiper-slide {
@@ -75,6 +100,26 @@
         padding-bottom: 25px;
         width: 335px;
         max-width: 100%;
+    }
+
+    &__line {
+        display: flex;
+        max-width: 115px;
+        gap: 0 4px;
+        margin: -20px auto 20px;
+        padding: 10px 0;
+    }
+
+    &__rating {
+        width: 20px;
+        height: 3px;
+        background: rgba(0, 0, 0, 0.2);
+        font-size: 0;
+        
+    }
+
+    &__rating:first-child {
+        background-color: #F1D264;
     }
 
     
@@ -91,7 +136,7 @@
         line-height: 142%;
         color: #000000;
         margin: 10px auto 5px;
-        width: 250px;
+        max-width: 250px;
         
     }
 
@@ -137,6 +182,7 @@
         max-width: 100%;
         margin: 0 auto;
         width: 100%;
+        
     }
 
     
@@ -302,13 +348,6 @@
             }
         }
 
-        /*li {
-            button:active {
-                background-color: #F1D264;
-            }
-        }*/
-
-    
         &__swiper-button-prev,
         &__swiper-button-next {
             display: none;
@@ -347,6 +386,7 @@
 
         &__title {
             font-size: px-to-em(16);
+            width: 286px;
         }
 
         &__tabs {
