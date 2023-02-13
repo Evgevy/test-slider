@@ -22,10 +22,10 @@ mixin test(modifier)
             h2.test__title Тарелка керамическая ручной работы ⌀ 12
             span.test__price 600 ₽ <del>810 ₽
             .test__select
-              .test__quantity(type='data-counter')
-                button(type="button").test__button &#8722;
-                p.test__num 1
-                button(type="button").test__button &#43;
+              .test__quantity
+                button(type="button" data-action="minus").test__button &#8722;
+                p.test__num(data-counter) 1
+                button(type="button" data-action="plus").test__button &#43;
               button(type="button").test__btn
                 .test__textone В корзину
                 include img/basket.svg
@@ -42,10 +42,10 @@ mixin test(modifier)
             h2.test__title Кашпо для цветов керамическое СИМПЛГРЕЙ
             span.test__price 450 ₽
             .test__select
-              .test__quantity(type='data-counter')
-                button(type="button").test__button &#8722;
-                p.test__num 1
-                button(type="button").test__button &#43;
+              .test__quantity
+                button(type="button" data-action="minus").test__button &#8722;
+                p.test__num(data-counter) 1
+                button(type="button" data-action="plus").test__button &#43;
               button(type="button").test__btn
                 .test__textone В корзину
                 include img/basket.svg
@@ -65,9 +65,9 @@ mixin test(modifier)
             span.test__price 12 999 ₽ 
             .test__select
               .test__quantity
-                button(type="button").test__button &#8722;
-                p.test__num 1
-                button(type="button").test__button &#43;
+                button(type="button" data-action="minus").test__button &#8722;
+                p.test__num(data-counter) 1
+                button(type="button" data-action="plus").test__button &#43;
               button(type="button").test__btn
                 .test__textone В корзину
                 include img/basket.svg
@@ -87,9 +87,9 @@ mixin test(modifier)
             span.test__price 15 700 ₽
             .test__select
               .test__quantity
-                button(type="button").test__button &#8722;
-                p.test__num 1
-                button(type="button").test__button &#43;
+                button(type="button" data-action="minus").test__button &#8722;
+                p.test__num(data-counter) 1
+                button(type="button" data-action="plus").test__button &#43;
               button(type="button").test__btn
                 .test__textone В корзину
                 include img/basket.svg
@@ -107,9 +107,9 @@ mixin test(modifier)
             span.test__price 600 ₽ <del>810 ₽
             .test__select
               .test__quantity
-                button(type="button").test__button &#8722;
-                p.test__num 1
-                button(type="button").test__button &#43;
+                button(type="button" data-action="minus").test__button &#8722;
+                p.test__num(data-counter) 1
+                button(type="button" data-action="plus").test__button &#43;
               button(type="button").test__btn
                 .test__textone В корзину
                 include img/basket.svg
@@ -127,9 +127,9 @@ mixin test(modifier)
             span.test__price 450 ₽
             .test__select
               .test__quantity
-                button(type="button").test__button &#8722;
-                p.test__num 1
-                button(type="button").test__button &#43;
+                button(type="button" data-action="minus").test__button &#8722;
+                p.test__num(data-counter) 1
+                button(type="button" data-action="plus").test__button &#43;
               button(type="button").test__btn
                 .test__textone В корзину
                 include img/basket.svg
@@ -149,9 +149,9 @@ mixin test(modifier)
             span.test__price 12 999 ₽ 
             .test__select
               .test__quantity
-                button(type="button").test__button &#8722;
-                p.test__num 1
-                button(type="button").test__button &#43;
+               button(type="button" data-action="minus").test__button &#8722;
+                p.test__num(data-counter) 1
+                button(type="button" data-action="plus").test__button &#43;
               button(type="button").test__btn
                 .test__textone В корзину
                 include img/basket.svg
@@ -171,9 +171,9 @@ mixin test(modifier)
             span.test__price 15 700 ₽
             .test__select
               .test__quantity
-                button(type="button").test__button &#8722;
-                p.test__num 1
-                button(type="button").test__button &#43;
+               button(type="button" data-action="minus").test__button &#8722;
+                p.test__num(data-counter) 1
+                button(type="button" data-action="plus").test__button &#43;
               button(type="button").test__btn
                 .test__textone В корзину
                 include img/basket.svg

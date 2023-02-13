@@ -54,7 +54,31 @@ $(document).ready(function(){
   
   })
 
-  /*document.querySelector('.test__rating').onclick = function() {
-    document.querySelector(".test__rating").style.backgroundColor = "#F1D264";
-  };*/
+window.addEventListener('click', function(event){
+
+  let counter;
+
+  if (event.target.dataset.action === 'plus' || event.target.dataset.action === 'minus') {
+
+    const testQuantity = event.target.closest('.test__quantity');
+    counter = testQuantity.querySelector('[data-counter]');
+
+  }
+  
+
+  if (event.target.dataset.action === 'plus') {
+
+    counter.innerText = ++counter.innerText;
+
+  }
+
+  if (event.target.dataset.action === 'minus') {
+    
+    if (parseInt(counter.innerText) > 1) {
+      counter.innerText = --counter.innerText;
+    }
+
+  }
+
+});
   
