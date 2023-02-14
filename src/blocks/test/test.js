@@ -32,7 +32,7 @@ $(document).ready(function(){
         {
           breakpoint: 455,
           settings: {
-            dots: true,
+            dots: false,
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
