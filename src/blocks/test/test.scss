@@ -42,7 +42,7 @@
     del {
         font-family: 'Rubik';
         font-weight: 400;
-        font-size: 14px;
+        font-size: 17px;
         line-height: 22px;
         text-transform: uppercase;
         color: #8D9295;
@@ -96,7 +96,7 @@
         text-align: center;
         border: 1px solid #ECF0F4;
         border-radius: 5px;
-        margin-right: 15px;
+        margin: 0 5px;
         padding-bottom: 25px;
         width: 335px;
         max-width: 100%;
@@ -127,6 +127,7 @@
     &__swiper-wrapper {
         width: 100%;
         max-width: 1390px;
+        overflow: hidden;
     }
 
     
@@ -165,7 +166,7 @@
         justify-content: center;
         align-items: center;
         gap: 0 20px;
-        margin-left: 25px;
+        margin-left: 15px;
     }
 
     &__button,
@@ -208,11 +209,11 @@
     &__btn {
         display: flex;
         align-items: center;
-        gap: 0 13px;
+        gap: 0 10px;
         background: #F1D264;
         border-radius: 5px;
-        padding: 16px 35px;
-        margin-right: 25px;
+        padding: 16px 30px;
+        margin-right: 10px;
     }
 
     &__icon {
@@ -224,7 +225,7 @@
     &__swiper {
         display: flex;
         align-items: center;
-        gap: 0 30px;
+        gap: 0 20px;
         justify-content: center;
     }
 
@@ -373,6 +374,8 @@
         &__swiper-button-next {
             display: none;
         }
+
+       
     }
 
     @media screen and (max-width: 360px) {
@@ -401,6 +404,8 @@
         &__link {
             font-size: px-to-em(14);
         }
+
+       
 
     }
 
